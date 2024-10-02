@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image:url("Images/bgg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    
+}
+
+.top {
+    padding: 78px;
+    margin-top: -5px;
+    margin-bottom:-30px;
+    color: #FAF9F6;
+    background-color: hsla(254, 95%, 8%, 0.356);
+    background-image: url("Images/logo.png");
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+.title  {
+    padding: 100px;
+    margin-top: 0px;
+    margin-bottom:-30px;
+    background-image: url("Images/ttle.png");
+    background-position: center;
+    background-size: 15%;
+    background-repeat: no-repeat;
+}
+.card-container {
+    margin-top: -150px;
+    margin-bottom: -25px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    padding-top:260px; 
+    padding-bottom: -100px;
+    
+}
+
+.footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    color: #faf9f67e;
+    background-color: hsla(254, 95%, 8%, 0.356);
+
+}
+
+.card {
+    position: relative;
+    width: 290px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    margin: 30px; 
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.original-image {
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.hover-image {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.25s;
+    
+    
+}
+.info{
+    width: 100%;
+    transition: transform 0.25s;
+    color: rgb(215, 192, 17);
+    opacity: 1;
+    text-align: center;
+    font-size: 17px;
+    
+    
+  }
+
+.card:hover .original-image {
+    opacity: 0.3;
+    transform: scale(1.1) perspective(1000px) translateY(-5%) rotateX(20deg) translateZ(0);
+    box-shadow: rgba(255, 255, 255, 0.932) 0px 20px 50px 4px;
+}
+.card:hover .hover-image {
+    opacity: 1.1 ;
+    transform: scale(1.1) perspective(1000px) translateY(-5%) rotateX(10deg) translateZ(0);
+    
+}
+
+  .left-align{
+    text-align: left;
+    margin-top: 25px;
+  }
+  .center-align{
+    text-align: center;
+  }
+  .right-align{
+    text-align: right;
+    margin-top: 25px;
+  }
+  
+  @font-face {
+    font-family: 'Ditty';
+    src: url('Ditty.ttf') format('truetype');
+    }
+  
